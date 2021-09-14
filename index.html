@@ -33,6 +33,7 @@
             <li>Enjoying in casino-hotels.</li>
         </ul>
         <a href="aboutme.html">aboutme file</a>
+        <hr>
         <h3> Recommended Drinks</h3>    
        <p>The below table shows the Recommended Drinks and their available location and Purchase value.</p> 
     
@@ -67,6 +68,28 @@
         <td>120</td>
      </tr>
    </table>
+
+   <hr>
+
+   <h4> Algebra </h4>
+   <blockquote cite = "https://en.wikipedia.org/wiki/Fibonacci_number">the Fibonacci numbers, commonly denoted Fn, form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. </blockquote>
+   <a href= "https://cp-algorithms.com/algebra/fibonacci-numbers.html">Algebra</a>
+   <pre>
+
+    pair<int, int> fib (int n) {
+        if (n == 0)
+            return {0, 1};
+    
+        auto p = fib(n >> 1);
+        int c = p.first * (2 * p.second - p.first);
+        int d = p.first * p.first + p.second * p.second;
+        if (n & 1)
+            return {d, c + d};
+        else
+            return {c, d};
+    }
+    
+   </pre>
     </body>
 </html>
 
